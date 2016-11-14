@@ -91,7 +91,7 @@ gen-hash-multiplication-method.
 3. Write a function gen-checker that takes as input a list of hash functions
 and a dictionary of words, and returns a spell checker. A spell
 checker is a function that takes a word as input and returns either
-#t or #f, indicating a correctly or incorrectly spelled word, respectively.
+`#t or #f`, indicating a correctly or incorrectly spelled word, respectively.
 Your implementation of gen-checker should generate
 the bitvector representation for the input dictionary exactly
 once.
