@@ -82,26 +82,12 @@ not dependent on a particular selection of size
 For this project, words are represented as lists of lower case symbols, e.g.,
 the word “class” is represented as ’(c l a s s). The project consists of three
 parts:
-1. Write the key function key which takes a word as input and maps it to
-its key using the provided cvt character to value mapping.
-2. Write a function that generates hash functions based on the division
-method gen-hash-division-method, and a function that generates
-hash functions based on the multiplication method
-gen-hash-multiplication-method.
-3. Write a function gen-checker that takes as input a list of hash functions
-and a dictionary of words, and returns a spell checker. A spell
-checker is a function that takes a word as input and returns either
-`#t or #f`, indicating a correctly or incorrectly spelled word, respectively.
-Your implementation of gen-checker should generate
-the bitvector representation for the input dictionary exactly
-once.
-For the implementation of these functions, you can use Scheme functions
-such as modulo and floor. You must use the reduce function at least once
-in your implementation in a useful way. The definition of reduce is given
-in file include.ss. Note that a hash function based on a multiplication
-method may return integer values of the form 17.0 instead of just 17 . Use
-the Scheme “=” function (numeric equality) to test for equality. Do not use
-“eq?” or “equal?”.
+1. Write the key function key which takes a word as input and maps it to its key using the provided cvt character to value mapping.
+2. Write a function that generates hash functions based on the division method gen-hash-division-method, and a function that generates hash functions based on the multiplication method gen-hash-multiplication-method.
+3. Write a function gen-checker that takes as input a list of hash functions and a dictionary of words, and returns a spell checker. A spell checker is a function that takes a word as input and returns either`#t or #f`, indicating a correctly or incorrectly spelled word, respectively.
+
+Your implementation of gen-checker should generate the bitvector representation for the input dictionary exactly
+once. 
 
 
 
